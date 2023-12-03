@@ -76,4 +76,67 @@ body {
   font-family: "Epilogue", sans-serif;
 }
 
+.header {
+  margin-block: 1.25rem;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.auth__desktop {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-flow: column-reverse wrap;
+}
+.main .hero {
+  margin-block-start: 2rem;
+  text-align: center;
+}
+.main .hero__content h1 {
+  color: hsl(0, 0%, 8%);
+  font-size: 2.25rem;
+}
+.main .hero__content p {
+  font-size: 1.125rem;
+  margin-block: 1rem;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+}
+.main .hero__featured-in {
+  display: flex;
+  gap: 2rem;
+  padding-inline: 1rem;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 5rem;
+  margin-inline: 1rem;
+}
+
+.nav__desktop {
+  display: none;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+.btn__learn-more:link, .btn__learn-more:visited, .btn__learn-more:active {
+  display: inline-block;
+  color: hsl(0, 0%, 98%);
+  text-decoration: none;
+  background-color: hsl(0, 0%, 8%);
+  padding: 0.75rem 1.25rem;
+  border-radius: 15px;
+  margin: 1rem 0 3rem 0;
+}
+
 /*# sourceMappingURL=style.css.map */

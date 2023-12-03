@@ -1,0 +1,16 @@
+
+
+.header {
+  margin-block: 1.25rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+  }
+}
+
+
+.auth__desktop {
+  display: none;
+}

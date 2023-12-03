@@ -19,14 +19,22 @@
       href="./css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="logo">
           <img
             src="./images/logo.svg"
             alt="Snap" />
         </div>
-        <nav>
+
+        <!-- Mobile Nav -->
+        <button class="btn btn__nav">
+          <img src="./images/icon-menu.svg" alt="Menu">
+        </button>
+
+
+        <!-- Desktop Nav -->
+        <nav class="nav__desktop">
           <ul>
             <li>
               <button>
@@ -52,27 +60,28 @@
             </li>
           </ul>
         </nav>
+        <!-- Desktop Nav -->
 
-        <div class="auth">
+        <div class="auth__desktop">
           <a href="#">Login</a>
           <a href="#">Register</a>
         </div>
       </div>
     </header>
 
-    <main>
-      <section>
-        <div>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__content">
           <h1>Make Remote work</h1>
           <p>
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
 
-          <a href="#">Learn more</a>
+          <a href="#" class="btn__learn-more">Learn more</a>
         </div>
 
-        <ul>
+        <ul class="hero__featured-in">
           <li>
             <img
               src="./images/client-databiz.svg"
@@ -95,7 +104,9 @@
           </li>
         </ul>
       </section>
-      <section>
+
+
+      <section class="hero__img-container">
         <picture>
           <source
             srcset="./images/image-hero-desktop.png"

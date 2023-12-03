@@ -1,0 +1,23 @@
+@use '../abstract' as *;
+
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+.btn__learn-more {
+  &:link,
+  &:visited,
+  &:active {
+    display: inline-block;
+    color: $almost-white;
+    text-decoration: none;
+    background-color: $almost-black;
+    padding: .75rem 1.25rem;
+    border-radius: 15px;
+    margin: 1rem 0 3rem 0;
+  }
+
+  &:hover {
+  }
+}

@@ -1,0 +1,40 @@
+@use '../abstract' as *;
+
+.main {
+  display: flex;
+  flex-flow: column-reverse wrap;
+
+
+  .hero {
+    margin-block-start: 2rem;
+    text-align: center;
+
+    &__content {
+      h1 {
+        color: $almost-black;
+        font-size: 2.25rem;
+      }
+
+
+      p {
+        font-size: 1.125rem;
+        margin-block: 1rem;
+        color: $medium-gray;
+        font-weight: 500;
+      }
+    }
+
+
+    &__featured-in {
+      display: flex;
+      gap: 2rem;
+      padding-inline: 1rem;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin-block-start: 0;
+      margin-block-end: 5rem;
+      margin-inline: 1rem;
+    }
+  }
+}
