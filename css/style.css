@@ -85,9 +85,15 @@ body {
   align-items: center;
   padding-inline: 1rem;
 }
-
-.auth__desktop {
-  display: none;
+@media only screen and (min-width: 48rem) {
+  .header .container {
+    justify-content: start;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .header .logo img {
+    width: 70%;
+  }
 }
 
 .main {
@@ -103,10 +109,11 @@ body {
   font-size: 2.25rem;
 }
 .main .hero__content p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-block: 1rem;
   color: hsl(0, 0%, 41%);
   font-weight: 500;
+  padding-inline: 1rem;
 }
 .main .hero__featured-in {
   display: flex;
@@ -123,6 +130,42 @@ body {
 .nav__desktop {
   display: none;
 }
+@media only screen and (min-width: 48rem) {
+  .nav__desktop {
+    display: block;
+    margin-inline-end: auto;
+  }
+  .nav__desktop ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+  }
+  .nav__desktop ul a {
+    text-decoration: none;
+  }
+  .nav__desktop ul a:link, .nav__desktop ul a:visited, .nav__desktop ul a:active {
+    color: hsl(0, 0%, 41%);
+  }
+}
+
+.auth__desktop {
+  display: none;
+}
+.auth__desktop a {
+  text-decoration: none;
+}
+.auth__desktop a:link, .auth__desktop a:visited, .auth__desktop a:active {
+  color: hsl(0, 0%, 41%);
+}
+@media only screen and (min-width: 48rem) {
+  .auth__desktop {
+    display: flex;
+    gap: 2rem;
+  }
+}
 
 .btn {
   background-color: transparent;
@@ -137,6 +180,18 @@ body {
   padding: 0.75rem 1.25rem;
   border-radius: 15px;
   margin: 1rem 0 3rem 0;
+}
+@media only screen and (min-width: 48rem) {
+  .btn.btn__nav {
+    display: none;
+  }
+}
+
+.btn.btn__dropdown {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: hsl(0, 0%, 41%);
 }
 
 /*# sourceMappingURL=style.css.map */

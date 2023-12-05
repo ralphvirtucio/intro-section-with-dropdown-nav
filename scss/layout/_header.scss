@@ -7,10 +7,19 @@
     justify-content: space-between;
     align-items: center;
     padding-inline: 1rem;
+
+    @media only screen and (min-width: 48rem) {
+      justify-content: start;
+    }
+  }
+
+  .logo {
+    img {
+      @media only screen and (min-width: 48rem) {
+        width: 70%;
+      }
+    }
+     
   }
 }
 
-
-.auth__desktop {
-  display: none;
-}

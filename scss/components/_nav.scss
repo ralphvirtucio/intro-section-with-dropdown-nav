@@ -1,8 +1,49 @@
-
+@use '../abstract' as *;
 
 
 .nav {
   &__desktop {
     display: none;
+
+    @media only screen and (min-width: 48rem) {
+      display: block;
+      margin-inline-end: auto;
+      
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 2rem;
+
+        a {
+          text-decoration: none;
+
+          &:link, &:visited, &:active {
+            color: $medium-gray;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.auth__desktop {
+  display: none;
+
+  a {
+    text-decoration: none;
+    
+    &:link, &:visited, &:active {
+      color: $medium-gray;
+    }
+  }
+
+  @media only screen and (min-width: 48rem) {
+    display: flex;
+    gap: 2rem;
   }
 }

@@ -21,3 +21,17 @@
   &:hover {
   }
 }
+
+
+.btn.btn__nav {
+  @media only screen and (min-width: 48rem) {
+    display: none;
+  }
+}
+
+.btn.btn__dropdown {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: $medium-gray;
+}
