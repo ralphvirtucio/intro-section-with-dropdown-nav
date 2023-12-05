@@ -15,8 +15,8 @@
 
 
   .hero {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     margin-block-start: 2rem;
     text-align: center;
     grid-row-start: 2;
@@ -27,14 +27,13 @@
 
     }
 
-    &__content {
-      h1 {
+      .hero__heading {
         color: $almost-black;
         font-size: 2.25rem;
       }
 
 
-      p {
+      .hero__text {
         font-size: 1rem;
         margin-block: 1rem;
         color: $medium-gray;
@@ -46,7 +45,6 @@
           font-size: $fs-body;
         }
       }
-    }
 
 
     &__featured-in {

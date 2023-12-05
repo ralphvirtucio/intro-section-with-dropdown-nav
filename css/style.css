@@ -107,6 +107,8 @@ body {
   }
 }
 .main .hero {
+  display: flex;
+  flex-direction: column;
   margin-block-start: 2rem;
   text-align: center;
   grid-row-start: 2;
@@ -117,11 +119,11 @@ body {
     grid-row-start: auto;
   }
 }
-.main .hero__content h1 {
+.main .hero .hero__heading {
   color: hsl(0, 0%, 8%);
   font-size: 2.25rem;
 }
-.main .hero__content p {
+.main .hero .hero__text {
   font-size: 1rem;
   margin-block: 1rem;
   color: hsl(0, 0%, 41%);
@@ -129,7 +131,7 @@ body {
   padding-inline: 1rem;
 }
 @media only screen and (min-width: 64rem) {
-  .main .hero__content p {
+  .main .hero .hero__text {
     padding: 0;
     font-size: 1.125rem;
   }
