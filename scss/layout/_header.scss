@@ -11,11 +11,16 @@
 
     @media only screen and (min-width: 64rem) {
       justify-content: start;
-      margin-block-end: 5rem;
+      margin-block-end: 3rem;
+      padding-inline: 3rem;
     }
   }
 
   .logo {
+    @media only screen and (min-width: 64rem) {
+      margin-inline-end: 3rem;
+    
+    }
     img {
       @media only screen and (min-width: 64rem) {
         width: 70%;
