@@ -8,7 +8,7 @@
   
   @media only screen and (min-width: 64rem) {
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 8rem;
     max-width: 850px;
     margin-inline: auto;
   }
@@ -17,19 +17,27 @@
   .hero {
     display: flex;
     flex-direction: column;
-    margin-block-start: 2rem;
+    align-items: center;
     text-align: center;
+    margin-block-start: 2rem;
     grid-row-start: 2;
 
     @media only screen and (min-width: 64rem) {
       text-align: start;
       grid-row-start: auto;
+      align-items: start;
 
     }
 
       .hero__heading {
         color: $almost-black;
         font-size: 2.25rem;
+
+        @media only screen and (min-width: 64rem) {
+         font-size: 3.4rem;
+         line-height: normal;
+         width: fit-content;
+        }
       }
 
 
