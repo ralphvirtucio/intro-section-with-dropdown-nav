@@ -76,33 +76,46 @@ body {
   font-family: "Epilogue", sans-serif;
 }
 
-.header {
-  margin-block: 1.25rem;
-}
 .header .container {
   display: flex;
+  padding-block: 1.25rem;
   justify-content: space-between;
   align-items: center;
   padding-inline: 1rem;
 }
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 64rem) {
   .header .container {
     justify-content: start;
   }
 }
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 64rem) {
   .header .logo img {
     width: 70%;
   }
 }
 
 .main {
-  display: flex;
-  flex-flow: column-reverse wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media only screen and (min-width: 64rem) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 850px;
+    margin-inline: auto;
+  }
 }
 .main .hero {
   margin-block-start: 2rem;
   text-align: center;
+  grid-row-start: 2;
+}
+@media only screen and (min-width: 64rem) {
+  .main .hero {
+    text-align: start;
+    grid-row-start: auto;
+  }
 }
 .main .hero__content h1 {
   color: hsl(0, 0%, 8%);
@@ -115,22 +128,34 @@ body {
   font-weight: 500;
   padding-inline: 1rem;
 }
+@media only screen and (min-width: 64rem) {
+  .main .hero__content p {
+    padding: 0;
+    font-size: 1.125rem;
+  }
+}
 .main .hero__featured-in {
   display: flex;
   gap: 2rem;
   padding-inline: 1rem;
   align-items: center;
   list-style: none;
-  padding: 0;
   margin-block-start: 0;
   margin-block-end: 5rem;
   margin-inline: 1rem;
+}
+@media only screen and (min-width: 64rem) {
+  .main .hero__featured-in {
+    margin: 0;
+    padding: 0;
+    margin-block-start: auto;
+  }
 }
 
 .nav__desktop {
   display: none;
 }
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 64rem) {
   .nav__desktop {
     display: block;
     margin-inline-end: auto;
@@ -160,9 +185,10 @@ body {
 .auth__desktop a:link, .auth__desktop a:visited, .auth__desktop a:active {
   color: hsl(0, 0%, 41%);
 }
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 64rem) {
   .auth__desktop {
     display: flex;
+    align-items: center;
     gap: 2rem;
   }
 }
@@ -181,7 +207,7 @@ body {
   border-radius: 15px;
   margin: 1rem 0 3rem 0;
 }
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 64rem) {
   .btn.btn__nav {
     display: none;
   }
@@ -192,6 +218,16 @@ body {
   align-items: center;
   gap: 0.5rem;
   color: hsl(0, 0%, 41%);
+}
+
+.register__btn {
+  border: 1px solid hsl(0, 0%, 41%);
+  border-radius: 15px;
+}
+@media only screen and (min-width: 64rem) {
+  .register__btn {
+    padding: 0.5rem 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -24,7 +24,7 @@
 
 
 .btn.btn__nav {
-  @media only screen and (min-width: 48rem) {
+  @media only screen and (min-width: 64rem) {
     display: none;
   }
 }
@@ -34,4 +34,13 @@
   align-items: center;
   gap: .5rem;
   color: $medium-gray;
+}
+
+.register__btn {
+  border: 1px solid $medium-gray;
+  border-radius: 15px;
+
+  @media only screen and (min-width: 64rem) {
+    padding: .5rem 1rem;
+  }
 }
