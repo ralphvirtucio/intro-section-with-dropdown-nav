@@ -144,6 +144,12 @@ body {
     width: fit-content;
   }
 }
+@media only screen and (min-width: 90rem) {
+  .main .hero .hero__heading {
+    font-size: 5rem;
+    margin-block-start: 5rem;
+  }
+}
 .main .hero .hero__text {
   font-size: 1rem;
   margin-block: 1rem;
@@ -155,6 +161,12 @@ body {
   .main .hero .hero__text {
     padding: 0;
     font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .main .hero .hero__text {
+    margin-block: 3rem;
+    width: 90%;
   }
 }
 .main .hero__featured-in {
