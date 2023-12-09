@@ -243,6 +243,11 @@ body {
   margin: 1rem 0 3rem 0;
 }
 @media only screen and (min-width: 64rem) {
+  .btn__learn-more {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
   .btn.btn__nav {
     display: none;
   }
