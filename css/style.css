@@ -195,7 +195,7 @@ body {
     display: block;
     margin-inline-end: auto;
   }
-  .nav__desktop ul {
+  .nav__desktop .nav__desktop--list {
     display: flex;
     align-items: center;
     list-style: none;
@@ -203,11 +203,16 @@ body {
     margin: 0;
     gap: 2rem;
   }
-  .nav__desktop ul a {
+  .nav__desktop .nav__desktop--list a {
     text-decoration: none;
   }
-  .nav__desktop ul a:link, .nav__desktop ul a:visited, .nav__desktop ul a:active {
+  .nav__desktop .nav__desktop--list a:link, .nav__desktop .nav__desktop--list a:visited, .nav__desktop .nav__desktop--list a:active {
     color: hsl(0, 0%, 41%);
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .nav__mobile {
+    display: none;
   }
 }
 
@@ -248,12 +253,12 @@ body {
   }
 }
 @media only screen and (min-width: 64rem) {
-  .btn.btn__nav {
+  .btn.btn__nav-toggle {
     display: none;
   }
 }
 
-.btn.btn__dropdown {
+.btn.btn--disclosure {
   display: flex;
   align-items: center;
   gap: 0.5rem;

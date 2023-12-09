@@ -9,7 +9,7 @@
       display: block;
       margin-inline-end: auto;
       
-      ul {
+      .nav__desktop--list {
         display: flex;
         align-items: center;
         list-style: none;
@@ -25,6 +25,13 @@
           }
         }
       }
+    }
+  }
+
+
+  &__mobile {
+    @media only screen and (min-width: 64rem) {
+      display: none;
     }
   }
 }
