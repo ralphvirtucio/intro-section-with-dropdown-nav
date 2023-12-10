@@ -209,6 +209,9 @@ body {
   .nav__desktop .nav__desktop--list a:link, .nav__desktop .nav__desktop--list a:visited, .nav__desktop .nav__desktop--list a:active {
     color: hsl(0, 0%, 41%);
   }
+  .nav__desktop .nav__desktop--list a:hover {
+    color: hsl(0, 0%, 8%);
+  }
 }
 @media only screen and (min-width: 64rem) {
   .nav__mobile {
@@ -224,6 +227,9 @@ body {
 }
 .auth__desktop a:link, .auth__desktop a:visited, .auth__desktop a:active {
   color: hsl(0, 0%, 41%);
+}
+.auth__desktop a:hover {
+  color: hsl(0, 0%, 8%);
 }
 @media only screen and (min-width: 64rem) {
   .auth__desktop {
@@ -246,16 +252,45 @@ body {
   padding: 0.75rem 1.25rem;
   border-radius: 15px;
   margin: 1rem 0 3rem 0;
+  transition: all 0.2s;
 }
 @media only screen and (min-width: 64rem) {
   .btn__learn-more {
     font-size: 1.125rem;
   }
 }
+.btn__learn-more:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 8%);
+}
+
 @media only screen and (min-width: 64rem) {
   .btn.btn__nav-toggle {
     display: none;
   }
+}
+
+.register__btn {
+  border: 1px solid hsl(0, 0%, 41%);
+  border-radius: 15px;
+}
+.register__btn:link, .register__btn:visited, .register__btn:active {
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+}
+.register__btn:hover {
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 8%);
+}
+@media only screen and (min-width: 64rem) {
+  .register__btn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.disclosure {
+  position: relative;
 }
 
 .btn.btn--disclosure {
@@ -263,16 +298,51 @@ body {
   align-items: center;
   gap: 0.5rem;
   color: hsl(0, 0%, 41%);
+  cursor: pointer;
+}
+.btn.btn--disclosure:hover {
+  color: hsl(0, 0%, 8%);
+}
+.btn.btn--disclosure:hover svg path {
+  stroke: hsl(0, 0%, 8%);
 }
 
-.register__btn {
-  border: 1px solid hsl(0, 0%, 41%);
-  border-radius: 15px;
+#features-content {
+  margin: 0;
+  top: 70px;
+  left: 105px;
+  list-style: none;
+  position: absolute;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.12);
+  padding-inline: 2rem;
+  padding-block: 1.5rem;
+  border-radius: 12px;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
 }
-@media only screen and (min-width: 64rem) {
-  .register__btn {
-    padding: 0.5rem 1rem;
-  }
+#features-content li a {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+#features-content li a span {
+  line-height: 0;
+}
+
+#company-content {
+  list-style: none;
+  margin: 0;
+  top: 70px;
+  border-radius: 12px;
+  padding-block: 1.5rem;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,6 +23,10 @@
           &:link, &:visited, &:active {
             color: $medium-gray;
           }
+
+          &:hover {
+            color: $almost-black;
+          }
         }
       }
     }
@@ -46,6 +50,10 @@
     
     &:link, &:visited, &:active {
       color: $medium-gray;
+    }
+
+    &:hover {
+      color: $almost-black;
     }
   }
 
