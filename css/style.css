@@ -362,6 +362,28 @@ body {
 .btn.btn--disclosure:hover svg path {
   stroke: hsl(0, 0%, 8%);
 }
+.btn.btn--disclosure:focus-visible {
+  outline: solid orangered 3px;
+  outline-offset: 3px;
+}
+.btn.btn--disclosure[aria-expanded=false] + #features-content {
+  display: none;
+}
+.btn.btn--disclosure[aria-expanded=true] + #features-content {
+  display: flex;
+}
+.btn.btn--disclosure[aria-expanded=true] .disclosure__icon {
+  transform: rotate(-180deg);
+}
+.btn.btn--disclosure[aria-expanded=false] + #company-content {
+  display: none;
+}
+.btn.btn--disclosure[aria-expanded=true] + #company-content {
+  display: flex;
+}
+.btn.btn--disclosure[aria-expanded=true] .disclosure__icon {
+  transform: rotate(-180deg);
+}
 
 .btn--disclosure-mobile-close-btn {
   margin-block-end: 2rem;

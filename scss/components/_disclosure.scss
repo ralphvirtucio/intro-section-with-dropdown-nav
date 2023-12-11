@@ -83,6 +83,36 @@
       stroke: $almost-black;
     }
   }
+
+  &:focus-visible {
+    outline: solid orangered 3px;
+    outline-offset: 3px;
+  }
+
+  &[aria-expanded="false"]  + #features-content{
+    display: none;
+  }
+  &[aria-expanded="true"]  {
+    + #features-content{
+      display: flex;
+    }
+
+      .disclosure__icon {
+        transform: rotate(-180deg);
+      }
+  }
+  &[aria-expanded="false"]  + #company-content{
+    display: none;
+  }
+  &[aria-expanded="true"]  {
+    + #company-content{
+      display: flex;
+    }
+
+      .disclosure__icon {
+        transform: rotate(-180deg);
+      }
+  }
 }
 
 .btn--disclosure-mobile-close-btn {
