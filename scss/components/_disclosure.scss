@@ -2,19 +2,23 @@
 
 .disclosure {
   &__mobile {
-    /* background-color: red; */
     width: 65%;
     position: absolute;
-    top: 60px;
+    top: 0;
     right: 0;
     min-height: 100vh;
     background: #fff;
     padding-inline: 1.5rem;
+    padding-block-start: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 0px 100vw rgba(0, 0, 0, .60);
 
     .disclosure__content--mobile {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+
     }
 
     .disclosure__content--mobile-nav-list {
@@ -81,13 +85,11 @@
   }
 }
 
-.btn--disclosure-mobile {
-  position: relative;
-
-  @media only screen and (min-width: 64rem) {
-    display: none;
-  }
+.btn--disclosure-mobile-close-btn {
+  margin-block-end: 2rem;
+  align-self: flex-end;
 }
+
 
 #features-content {
   margin: 0;
