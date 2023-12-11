@@ -289,8 +289,58 @@ body {
   }
 }
 
-.disclosure {
-  position: relative;
+.disclosure__mobile {
+  /* background-color: red; */
+  width: 65%;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  min-height: 100vh;
+  background: #fff;
+  padding-inline: 1.5rem;
+}
+.disclosure__mobile .disclosure__content--mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.disclosure__mobile .disclosure__content--mobile-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.disclosure__mobile .disclosure__content--mobile-nav-list li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+.disclosure__mobile .auth__mobile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.disclosure__mobile .auth__mobile .login__btn:link, .disclosure__mobile .auth__mobile .login__btn:visited, .disclosure__mobile .auth__mobile .login__btn:active {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  cursor: pointer;
+}
+.disclosure__mobile .auth__mobile .login__btn:hover {
+  color: hsl(0, 0%, 8%);
+}
+.disclosure__mobile .auth__mobile .register__btn {
+  width: 100%;
+  text-align: center;
+  padding-block: 0.6rem;
+  border: 1px solid hsl(0, 0%, 41%);
+  cursor: pointer;
+}
+@media only screen and (min-width: 64rem) {
+  .disclosure__mobile {
+    display: none;
+  }
 }
 
 .btn.btn--disclosure {
@@ -299,12 +349,22 @@ body {
   gap: 0.5rem;
   color: hsl(0, 0%, 41%);
   cursor: pointer;
+  padding: 0;
 }
 .btn.btn--disclosure:hover {
   color: hsl(0, 0%, 8%);
 }
 .btn.btn--disclosure:hover svg path {
   stroke: hsl(0, 0%, 8%);
+}
+
+.btn--disclosure-mobile {
+  position: relative;
+}
+@media only screen and (min-width: 64rem) {
+  .btn--disclosure-mobile {
+    display: none;
+  }
 }
 
 #features-content {
