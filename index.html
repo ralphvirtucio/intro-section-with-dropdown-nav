@@ -18,7 +18,9 @@
       rel="stylesheet"
       href="./css/style.css" />
 
-    <script src="main.js" defer></script>
+    <script
+      src="main.js"
+      defer></script>
 
     <style>
       [data-state='no-js'] #features-content {
@@ -29,10 +31,7 @@
         display: none;
       }
 
-      [data-state='no-js'] .disclosure__content--mobile {
-        display: none;
-      }
-      [data-state='no-js'] .disclosure__sub-mobile-content {
+      [data-state='no-js'] #disclosure__content-mobile {
         display: none;
       }
     </style>
@@ -46,25 +45,29 @@
             alt="Snap" />
         </div>
 
-        <!-- <button class="btn btn--disclosure-mobile">
-          <img
-            src="./images/icon-menu.svg"
-            alt="Mobile Navigation Toggle" />
-        </button> -->
-        <!-- Mobile Nav -->
         <div
           class="disclosure js-disclosure disclosure__mobile"
-          data-state="ready">
-
-          <button class="btn btn--disclosure-mobile-close-btn">
+          data-state="no-js">
+          <button
+            class="btn btn--disclosure"
+            aria-expanded="false"
+            aria-content="disclosure__content-mobile"
+            disabled
+            title="This button becomes functional once JavaScript is active">
+            <img
+              src="./images/icon-menu.svg"
+              alt="Navigation Toggle" class="navigation__toggle-icon--open"/>
             <img
               src="./images/icon-close-menu.svg"
-              alt="Mobile Navigation Toggle" />
+              alt="Navigation Toggle" class="navigation__toggle-icon--close"/>
           </button>
-    
-          <div class="disclosure__content--mobile">
-            <nav class="disclosure__content--mobile-nav">
-              <ul class="disclosure__content--mobile-nav-list">
+         
+
+          <div
+            class="disclosure__content-mobile"
+            id="disclosure__content-mobile">
+            <nav class="disclosure__content-mobile-nav">
+              <ul class="disclosure__content-mobile-nav-list">
                 <li
                   class="disclosure__sub-mobile"
                   data-state="no-js">
@@ -186,7 +189,11 @@
             </nav>
 
             <div class="auth__mobile">
-              <a href="#" class="login__btn">Login</a>
+              <a
+                href="#"
+                class="login__btn"
+                >Login</a
+              >
               <a
                 href="#"
                 class="register__btn"
@@ -404,11 +411,7 @@
           display: none;
         }
 
-        [data-state='no-js'] .disclosure__content--mobile {
-          display: none;
-        }
-
-        [data-state='no-js'] .disclosure__sub-mobile-content {
+        [data-state='no-js'] #disclosure__content-mobile {
           display: none;
         }
       </style>
