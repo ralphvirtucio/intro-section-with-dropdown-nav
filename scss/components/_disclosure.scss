@@ -64,22 +64,14 @@
       display: block;
     }
 
+    .overlay {
+      display: none;
+    }
+
     .disclosure__icon {
       transform: rotate(-180deg);
     }
-  }
 
-  // &[aria-expanded='false'] {
-  //   + .disclosure__content-mobile {
-  //     display: none;
-  //   }
-
-  //   .navigation__toggle-icon--close {
-  //     display: none;
-  //   }
-  // }
-
-  &[aria-expanded='true'] {
     .navigation__toggle-icon--open {
       display: none;
     }
@@ -87,6 +79,29 @@
     .navigation__toggle-icon--close {
       display: block;
     }
+  }
+
+  &[aria-expanded='false'] {
+    + .disclosure__content-mobile + .overlay {
+      display: none;
+    }
+ 
+   }
+
+
+  &[aria-expanded='true'] {
+   + .disclosure__content-mobile + .overlay {
+    position: absolute;
+    background-color: black;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 38.9%;
+    z-index: 10;
+    opacity: 0.5;
+   }
+
   }
 }
 
@@ -203,3 +218,5 @@
     }
   }
 }
+
+
