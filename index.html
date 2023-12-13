@@ -23,11 +23,20 @@
       defer></script>
 
     <style>
-      [data-state='no-js'] #features-content {
+      /* [data-state='no-js'] #features-content {
         display: none;
       }
 
       [data-state='no-js'] #company-content {
+        display: none;
+      } */
+
+      [data-state="no-js"] .disclosure__features-content {
+        display: none;
+      }
+
+
+      [data-state="no-js"] .disclosure__company-content {
         display: none;
       }
 
@@ -74,7 +83,7 @@
                   <button
                     class="btn btn--disclosure"
                     aria-expanded="false"
-                    aria-controls="features-content"
+                    aria-controls="mobile-features-content"
                     disabled
                     title="This button becomes functional once JavaScript is active">
                     Features
@@ -94,8 +103,8 @@
                   </button>
 
                   <ul
-                    class="disclosure__sub-mobile-content"
-                    id="features-content">
+                    class="disclosure__features-content"
+                    id="mobile-features-content">
                     <li>
                       <span>
                         <svg
@@ -156,7 +165,7 @@
                   <button
                     class="btn btn--disclosure"
                     aria-expanded="false"
-                    aria-controls="company-content"
+                    aria-controls="mobile-company-content"
                     disabled
                     title="This button becomes functional once JavaScript is active">
                     Company
@@ -176,8 +185,8 @@
                   </button>
 
                   <ul
-                    class="disclosure__sub-mobile-content"
-                    id="company-content">
+                    class="disclosure__company-content"
+                    id="mobile-company-contentt">
                     <li><a href="#">History</a></li>
                     <li><a href="#">Our Team</a></li>
                     <li><a href="#">Blog</a></li>
@@ -212,7 +221,7 @@
               <button
                 class="btn btn--disclosure"
                 aria-expanded="false"
-                aria-controls="features-content"
+                aria-controls="desktop-features-content"
                 disabled
                 title="This button becomes functional once JavaScript is active">
                 Features
@@ -232,8 +241,8 @@
               </button>
 
               <ul
-                class="disclosure__content--desktop"
-                id="features-content">
+                class="disclosure__features-content"
+                id="desktop-features-content">
                 <li>
                   <a href="#">
                     <span>
@@ -296,7 +305,7 @@
               <button
                 class="btn btn--disclosure"
                 aria-expanded="false"
-                aria-controls="company-content"
+                aria-controls="desktop-company-content"
                 disabled
                 title="This button becomes functional once JavaScript is active">
                 Company
@@ -316,8 +325,8 @@
               </button>
 
               <ul
-                class="disclosure__content--desktop"
-                id="company-content">
+                class="disclosure__company-content"
+                id="desktop-company-content">
                 <li>
                   <a href="#">History</a>
                 </li>
@@ -403,13 +412,22 @@
 
     <noscript>
       <style>
-        [data-state='no-js'] #features-content {
+        /* [data-state='no-js'] #features-content {
           display: none;
         }
 
         [data-state='no-js'] #company-content {
           display: none;
-        }
+        } */
+
+      [data-state="no-js"] .disclosure__features-content {
+        display: none;
+      }
+
+      
+      [data-state="no-js"] .disclosure__company-content {
+        display: none;
+      }
 
         [data-state='no-js'] #disclosure__content-mobile {
           display: none;

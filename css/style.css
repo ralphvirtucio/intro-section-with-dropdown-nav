@@ -315,29 +315,32 @@ body {
   outline: solid orangered 3px;
   outline-offset: 3px;
 }
-.btn.btn--disclosure[aria-expanded=false] + #features-content {
+.btn.btn--disclosure[aria-expanded=false] + .disclosure__features-content {
   display: none;
 }
-.btn.btn--disclosure[aria-expanded=true] + #features-content {
-  display: flex;
-}
-.btn.btn--disclosure[aria-expanded=true] .disclosure__icon {
-  transform: rotate(-180deg);
-}
-.btn.btn--disclosure[aria-expanded=false] + #company-content {
+.btn.btn--disclosure[aria-expanded=false] + .disclosure__company-content {
   display: none;
-}
-.btn.btn--disclosure[aria-expanded=true] + #company-content {
-  display: flex;
-}
-.btn.btn--disclosure[aria-expanded=true] .disclosure__icon {
-  transform: rotate(-180deg);
 }
 .btn.btn--disclosure[aria-expanded=false] + .disclosure__content-mobile {
   display: none;
 }
 .btn.btn--disclosure[aria-expanded=false] .navigation__toggle-icon--close {
   display: none;
+}
+.btn.btn--disclosure[aria-expanded=true] + .disclosure__features-content {
+  display: flex;
+}
+.btn.btn--disclosure[aria-expanded=true] + .disclosure__company-content {
+  display: flex;
+}
+.btn.btn--disclosure[aria-expanded=true] .navigation__toggle-icon--open {
+  display: none;
+}
+.btn.btn--disclosure[aria-expanded=true] .navigation__toggle-icon--close {
+  display: block;
+}
+.btn.btn--disclosure[aria-expanded=true] .disclosure__icon {
+  transform: rotate(-180deg);
 }
 .btn.btn--disclosure[aria-expanded=true] .navigation__toggle-icon--open {
   display: none;
@@ -351,7 +354,7 @@ body {
   align-self: flex-end;
 }
 
-#features-content {
+.disclosure__features-content {
   list-style: none;
   margin-inline: 0;
   margin-block: 1rem;
@@ -359,7 +362,7 @@ body {
   gap: 1rem;
 }
 @media only screen and (min-width: 64rem) {
-  #features-content {
+  .disclosure__features-content {
     top: 70px;
     left: 105px;
     margin: 0;
@@ -373,24 +376,24 @@ body {
     flex-direction: column;
     z-index: 10;
   }
-  #features-content li a {
+  .disclosure__features-content li a {
     display: flex;
     align-items: center;
     gap: 0.7rem;
   }
-  #features-content li a span {
+  .disclosure__features-content li a span {
     line-height: 0;
   }
 }
 
-#company-content {
+.disclosure__company-content {
   flex-direction: column;
   margin-block: 1rem;
   list-style: none;
   gap: 1rem;
 }
 @media only screen and (min-width: 64rem) {
-  #company-content {
+  .disclosure__company-content {
     margin: 0;
     top: 70px;
     border-radius: 12px;
