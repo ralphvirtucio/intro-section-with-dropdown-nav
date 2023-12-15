@@ -13,7 +13,7 @@
     margin-inline: auto;
   }
 
-  @media only screen and (min-width: 90rem) {
+  @media only screen and (min-width: 75rem) {
     max-width: 1200px;
   }
 
@@ -43,7 +43,7 @@
          width: fit-content;
         }
 
-        @media only screen and (min-width: 90rem) {
+        @media only screen and (min-width: 75rem) {
           font-size: 5rem;
           margin-block-start: 5rem;
         }
@@ -64,7 +64,7 @@
           font-size: $fs-body;
         }
 
-        @media only screen and (min-width: 90rem) {
+        @media only screen and (min-width: 75rem) {
           margin-block: 3rem;
           width: 90%;
         }
