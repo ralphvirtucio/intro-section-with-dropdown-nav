@@ -69,7 +69,6 @@
       display: block;
     }
 
-    
     .disclosure__icon {
       transform: rotate(-180deg);
     }
@@ -87,8 +86,7 @@
     + .disclosure__content-mobile + .overlay {
       display: none;
     }
- 
-   }
+  }
 }
 
 .btn--disclosure-mobile-close-btn {
@@ -115,6 +113,7 @@
     display: flex;
     flex-direction: column;
     z-index: 10;
+    background-color: #fff;
 
     li a {
       display: flex;
@@ -145,6 +144,8 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    background-color: #fff;
+    z-index: 10;
   }
 }
 
@@ -206,5 +207,3 @@
     }
   }
 }
-
-
