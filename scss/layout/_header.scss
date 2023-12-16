@@ -1,7 +1,7 @@
 
 
 .header {
-  .container {
+  // .container {
     display: flex;
     padding-block: 1.25rem;
     justify-content: space-between;
@@ -16,7 +16,7 @@
       padding-inline: 3rem;
       position: static;
     }
-  }
+  // }
 
   .logo {
     @media only screen and (min-width: 64rem) {

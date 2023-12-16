@@ -50,7 +50,6 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
         <div class="logo">
           <img
             src="./images/logo.svg"
@@ -61,7 +60,7 @@
           class="disclosure js-disclosure disclosure__mobile"
           data-state="no-js">
           <button
-            class="btn btn--disclosure"
+            class="btn btn--disclosure btn--disclosure-mobile"
             aria-expanded="false"
             aria-content="disclosure__content-mobile"
             disabled
@@ -199,23 +198,23 @@
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">About</a></li>
               </ul>
+
+              <div class="auth__mobile">
+                <a
+                  href="#"
+                  class="login__btn"
+                  >Login</a
+                >
+                <a
+                  href="#"
+                  class="register__btn"
+                  >Register</a
+                >
+              </div>
             </nav>
 
-            <div class="auth__mobile">
-              <a
-                href="#"
-                class="login__btn"
-                >Login</a
-              >
-              <a
-                href="#"
-                class="register__btn"
-                >Register</a
-              >
-            </div>
+           
           </div>
-
-          <div class="overlay"></div>
         </div>
 
         <!-- Desktop Nav -->
@@ -363,7 +362,6 @@
             >Register</a
           >
         </div>
-      </div>
     </header>
 
     <main class="main">

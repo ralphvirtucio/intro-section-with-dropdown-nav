@@ -75,7 +75,7 @@ body {
   font-family: "Epilogue", sans-serif;
 }
 
-.header .container {
+.header {
   display: flex;
   padding-block: 1.25rem;
   justify-content: space-between;
@@ -84,7 +84,7 @@ body {
   position: relative;
 }
 @media only screen and (min-width: 64rem) {
-  .header .container {
+  .header {
     justify-content: start;
     margin-block-end: 3rem;
     padding-inline: 3rem;
@@ -305,6 +305,10 @@ body {
   cursor: pointer;
   padding: 0;
 }
+.btn.btn--disclosure-mobile {
+  position: relative;
+  z-index: 10;
+}
 .btn.btn--disclosure:hover {
   color: hsl(0, 0%, 8%);
 }
@@ -339,9 +343,6 @@ body {
 .btn.btn--disclosure[aria-expanded=true] .navigation__toggle-icon--close {
   display: block;
 }
-.btn.btn--disclosure[aria-expanded=true] .overlay {
-  display: none;
-}
 .btn.btn--disclosure[aria-expanded=true] .disclosure__icon {
   transform: rotate(-180deg);
 }
@@ -353,17 +354,6 @@ body {
 }
 .btn.btn--disclosure[aria-expanded=false] + .disclosure__content-mobile + .overlay {
   display: none;
-}
-.btn.btn--disclosure[aria-expanded=true] + .disclosure__content-mobile + .overlay {
-  position: absolute;
-  background-color: black;
-  min-height: 100vh;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 38.9%;
-  z-index: 10;
-  opacity: 0.5;
 }
 
 .btn--disclosure-mobile-close-btn {
@@ -426,11 +416,13 @@ body {
 
 .disclosure__content-mobile {
   position: absolute;
-  right: -15px;
+  right: 0;
+  top: 0;
+  padding-block-start: 4rem;
+  padding-inline: 2rem;
   background-color: #fff;
   min-height: 100vh;
-  padding-inline: 2rem;
-  padding-block-start: 1rem;
+  box-shadow: 0px 0px 0px 100vw rgba(0, 0, 0, 0.6);
   width: 65%;
 }
 .disclosure__content-mobile-nav-list {
